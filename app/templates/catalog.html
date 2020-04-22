@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h3>Меню</h3>
+        <ul class="menu">
+            <li><a href="{{ url_for('index')}}">Гавная</a></li>
+            <li><a href="{{ url_for('catalog')}}">Каталог</a></li>
+            <li><a href="{{ url_for('contacts')}}">Контакты</a></li>
+            <li><a href="{{ url_for('login') }}">Вход</a></li>
+            <li><a href="{{ url_for('user', username=current_user.username) }}">Профиль</a></li>
+            <li><a href="{{ url_for('logout') }}">Выйти</a></li>
+        </ul>
+    </div>
+    <br>
+    <h1>Каталог</h1>
+    <div class="tovar tovar_1">
+        <img src="img/bed2.jpg" width="200" height="150" alt="bed"><br>
+        <a href="catalog/bed2.html">Посмотреть подробное описание</a><br>
+    </div>
+    <div class="tovar tovar_2">
+        <img src="img/bed3.jpg" width="200" height="150" alt="bed"><br>
+        <a href="catalog/bed3.html">Посмотреть подробное описание</a>
+    </div>
+    <hr>
+    <div class="footer">
+        <h5>Все права защищены &copy;&nbsp;2020</h5>
+        <a href="https://www.google.ru/maps/place/Мебель+России+на+Ярославском+шс.19а/@55.8584082,37.677031,15z/data=!4m5!3m4!1s0x46b53768ff39b323:0x7a409e32fd48f2f9!8m2!3d55.8584082!4d37.685791" target = _blank>Наш адрес</a>
+    </div>
+</body>
+</html>

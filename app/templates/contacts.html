@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <ul class="menu">
+            <li><a href="{{ url_for('index')}}">Гавная</a></li>
+            <li><a href="{{ url_for('catalog')}}">Каталог</a></li>
+            <li><a href="{{ url_for('contacts')}}">Контакты</a></li>
+            <li><a href="{{ url_for('login') }}">Вход</a></li>
+            <li><a href="{{ url_for('user', username=current_user.username) }}">Профиль</a></li>
+        </ul>
+    </div>
+    <h1>Обратная связь</h1>
+    <form action="#">
+        <fieldset>
+            <legend><b>Обратная связь</b></legend> Ваше имя&nbsp;&nbsp;
+            <input type="text" size="30" placeholder="Имя">
+            <br> Ваш email&nbsp;&nbsp;
+            <input type="email" size="30" placeholder="Адрес электронной почты">
+            <br> Ваш телефон&nbsp;&nbsp;
+            <input type="text" size="30" placeholder="Телефон">
+            <br> Тема&nbsp;&nbsp;
+            <input type="text" size="30" placeholder="Тема">
+            <br> Ваше сообщение
+            <br>
+            <textarea name="Ваше сообщение" id="" cols="55" rows="10" placeholder="Сообщение"></textarea>
+            <br>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Отчистить"> </fieldset>
+    </form>
+    <hr>
+    <h1>Как к нам добраться?</h1>
+    <h4>Мебель России на Ярославском шс.19а</h4>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.2454248170684!2d37.683602415860676!3d55.85840818058174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53768ff39b323%3A0x7a409e32fd48f2f9!2z0JzQtdCx0LXQu9GMINCg0L7RgdGB0LjQuCDQvdCwINCv0YDQvtGB0LvQsNCy0YHQutC-0Lwg0YjRgS4xOdCw!5e0!3m2!1sru!2sru!4v1585996833838!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="False" tabindex="0"></iframe>false" tabindex="0"></iframe>
+    <hr>
+    <div class="footer">
+        <h5>Все права защищены &copy;&nbsp;2020</h5>
+    </div>
+</body>
+</html>

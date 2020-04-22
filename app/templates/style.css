@@ -1,0 +1,223 @@
+body{background-color: #f8f8f8; /* Цвет фона */}
+
+.heading {
+    color: black;
+    font-size: 18px;
+    background-color: #eaeaea;
+    border: 4px solid black;
+    text-align: center;
+    font-weight: 400px;
+}
+
+.podrob{
+    margin-top: 20px;
+    clear: both;
+}
+
+img[alt="bed"] {
+    outline: 4px solid greenyellow;
+}
+
+img[alt="bed"]:hover {
+    outline: none;
+}
+
+.blue{
+    color: cornflowerblue;
+    background:url(img/bed2.jpg) no-repeat center;
+}
+
+p {
+    font-size: 1em;
+}
+
+
+
+.link{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h1,
+h3,
+p {
+    text-align: left
+}
+
+.menu li a{
+    display: inline;
+    color: darkred;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family:italic;
+    font-size: 15px;
+}
+
+.menu li{
+    list-style-type: none;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #000;
+    padding-bottom: 20px;
+    display: inline;
+
+}
+
+.menu li ul{
+    display: none;
+}
+
+.menu ul{
+    text-align: right;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu li:hover:after {
+    content: ">>";
+    color: orange;
+}
+
+
+
+p:first-letter {
+    font-size: 30px;
+    color: brown;
+}
+
+.kratko {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+
+}
+
+.podr {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400px;
+    text-align: left;
+    line-height: 24px;
+
+}
+
+.list_h {
+    color: darkolivegreen;
+    text-align: center;
+    font-weight: 400px;
+    font-style: oblique;
+}
+
+.list_h > li{
+    width: 70px;
+    height: 25px;
+    border: 1px solid #000;
+
+}
+
+.list_h li{
+    list-style-image: url(img/zv.jpg) ;
+}
+
+form input {
+    height: 25px;
+    width: 300px;
+    font-style: italic;
+}
+
+.menu li a:hover{
+    color:red;
+}
+
+.menu li a:active{
+    color: green;
+}
+
+.haract td{
+    border: 1px solid black;
+    padding-left: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.haract {
+    border: 1px solid #000;
+    width: 400px;
+    height: 200px;
+    border-collapse: collapse;
+}
+
+form input[type="email"]:focus {
+    color: deepskyblue;
+    background-color: #fff4c4;
+}
+
+textarea:focus {
+    text-transform: capitalize;
+}
+
+.tovar {
+    width: 240px;
+    height: 240px;
+    outline: 1px solid #484343;
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
+}
+
+.tovar a{
+    margin-bottom: 10px;
+}
+.footer {
+    width: 1400px;
+    height: 100px;
+    background-color: #c4e1e6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    clear: both;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.cont {
+    width: 700px;
+    margin: 0 auto;
+}
+.back{
+    height: 200px;
+    background-color: #c4e1e6;
+    padding-top: 50px;
+    padding-left: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: darkred;
+    float: left;
+}
+
+.img{
+    display:block;
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.buy{
+    border: 1px solid red;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.buy :hover {
+    color: orange;
+}

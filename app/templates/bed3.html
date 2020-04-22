@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин мебели</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Меню</h1>
+    <ul class="menu">
+        <li><a href="{{ url_for('index')}}">Гавная</a></li>
+        <li><a href="{{ url_for('catalog')}}">Каталог</a></li>
+        <li><a href="{{ url_for('contacts')}}">Контакты</a></li>
+        <li><a href="{{ url_for('login') }}">Вход</a></li>
+        <li><a href="{{ url_for('user', username=current_user.username) }}">Профиль</a></li>
+        <li><a href="{{ url_for('logout') }}">Выйти</a></li>
+    </ul>
+    <h1>Кровать Валенсия</h1>
+    <br>
+     <div class="img">
+        <a href="../img/bed3.jpg" target = _blank>
+            <img src="../img/bed3.jpg" width="250" height="200" alt="bed">
+    </div>
+    </a>
+    <h3 class="heading"> Краткое описание товара</h3>
+    <p class="kratko">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores enim laborum modi mollitia officiis quisquam sapiente sequi unde. A&nbsp;accusantium, adipisci consectetur explicabo illo maxime tempora. Illo natus omnis temporibus.</p>
+    <h3 class="heading podrob">Подробное описание товара</h3>
+    <p class="podr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at&nbsp;autem beatae commodi consequatur consequuntur cum cumque, cupiditate delectus deleniti dolorum earum et&nbsp;facilis fugit harum id&nbsp;illum in&nbsp;inventore itaque iure laborum laudantium nam nulla odit possimus quaerat quia quibusdam quo quod reprehenderit saepe tempora totam vitae voluptas voluptatum!</p>
+    <h3 class="heading">Технические характеристики</h3>
+    <table class="haract">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, nostrum.</p>
+    <h3 class="heading"> Особенности товара</h3>
+    <p>Королевское ложе с&nbsp;удобным матрасом в&nbsp;подарок!</p>
+     <div class="buy">
+        <a href="#">Купить!</a>
+    </div>
+    <hr>
+    <div class="footer">
+        <h5>Все права защищены &copy;&nbsp;2020</h5>
+        <a class="link" href="https://www.gogle.ru/maps/place/Мебель+России+на+Ярославском+шс.19а/@55.8584082,37.677031,15z/data=!4m5!3m4!1s0x46b53768ff39b323:0x7a409e32fd48f2f9!8m2!3d55.8584082!4d37.685791" target = _blank>Наш адрес</a>
+    </div>
+</body>
+</html>

@@ -1,8 +1,35 @@
-{% extends "base.html" %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cont">
+        <div class="back">
+            <div class="logo"></div>
+                <div class="header">
+                    <h3>  Меню</h3>
+                    <ul class="menu">
+                        <li><a href="{{ url_for('index')}}">Гавная</a></li>
+                        <li><a href="{{ url_for('catalog')}}">Каталог</a></li>
+                        <li><a href="{{ url_for('contacts')}}">Контакты</a></li>
+                        <li><a href="{{ url_for('login') }}">Вход</a></li>
+                        <li><a href="{{ url_for('user', username=current_user.username) }}">Профиль</a></li>
+                        <li><a href="{{ url_for('logout') }}">Выйти</a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
 
-{% block content %}
-    <h1>Hi, {{ user.username }}!</h1>
-    {% for post in posts %}
-    <div><p>{{ post.author }} says: <b>{{ post.body }}</b></p></div>
-    {% endfor %}
-{% endblock %}
+    <h1>Магазин мебели "Эстетико"</h1>
+    <p>Здравствуйте! Мы рады приветствовать вас на нашем сайте.</p><br>
+    <p>Приятных покупок :)</p>
+    <hr>
+    <div class="footer">
+        <h5>Все права защищены &copy;&nbsp;2020</h5>
+        <a href="https://www.google.ru/maps/place/Мебель+России+на+Ярославском+шс.19а/@55.8584082,37.677031,15z/data=!4m5!3m4!1s0x46b53768ff39b323:0x7a409e32fd48f2f9!8m2!3d55.8584082!4d37.685791" target = _blank>Наш адрес</a>
+    </div>
+</body>
+</html>
